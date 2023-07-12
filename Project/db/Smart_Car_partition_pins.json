@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "motor",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "L[3]",
+					"strict" : false
+				},
+				{
+					"name" : "L[4]",
+					"strict" : false
+				},
+				{
+					"name" : "L[5]",
+					"strict" : false
+				},
+				{
+					"name" : "E[0]",
+					"strict" : false
+				},
+				{
+					"name" : "E[3]",
+					"strict" : false
+				},
+				{
+					"name" : "E[4]",
+					"strict" : false
+				},
+				{
+					"name" : "E[5]",
+					"strict" : false
+				},
+				{
+					"name" : "E[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R[5]",
+					"strict" : false
+				},
+				{
+					"name" : "T[3]",
+					"strict" : false
+				},
+				{
+					"name" : "T[4]",
+					"strict" : false
+				},
+				{
+					"name" : "T[5]",
+					"strict" : false
+				},
+				{
+					"name" : "T[6]",
+					"strict" : false
+				},
+				{
+					"name" : "infra",
+					"strict" : false
+				},
+				{
+					"name" : "lane",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

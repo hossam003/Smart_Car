@@ -1,0 +1,37 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1163.all
+
+ENTITY Smart_Car IS
+	PORT(infra : IN STD_LOGIC;
+		  lane1 : IN STD_LOGIC;
+		  motor : BUFFER STD_LOGIC
+		  A : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+		  L : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+		  E : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+		  R : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+		  T : OUT STD_LOGIC_VECTOR(7 DOWNTO 0));
+END Smart_car;
+
+ARCHITECTURE arch OF Smart_Car IS
+	BEGIN
+		PROCESS(lane1, lane2, infra)
+		BEGIN
+			IF lane1'EVENT AND lane1 = '0' THEN
+				A <= '10001000';
+				L <= '11001111';
+				E <= '10000100';
+				R <= '11001110';
+				T <= '10000111';
+			ELSE
+				A <= '11111111';
+				L <= '11111111';
+				E <= '11111111';
+				R <= '11111111';
+				T <= '11111111';
+			END IF	
+			IF infra'EVENT AND infra = '1' THEN
+				motor = '0';
+			END IF;
+		END PROCESS;
+	END arch;
+				
